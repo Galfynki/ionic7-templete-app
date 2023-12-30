@@ -9,7 +9,7 @@ import { PrivacyPolicyComponent } from "./privacy-policy/privacy-policy.componen
 import { SignupComponent } from './signup/signup.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 
-
+import {NewsComponent} from "./news/news.component"
 
 const routes: Routes = [
   {
@@ -29,6 +29,10 @@ const routes: Routes = [
   {
     path: 'login',
     loadChildren: () => import('./login/login.module').then(m => m.LoginPageModule)
+  },
+  {
+    path: 'News',
+    component: NewsComponent
   },
   {
     path: 'contact-card',
