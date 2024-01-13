@@ -25,12 +25,14 @@ import {AppSharedComponentsModule} from './shared/common.module'
 
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 
+import { NewsComponent } from './news/news.component'
+
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18s/', '.json');
 }
 
 @NgModule({
-  declarations: [AppComponent, FormsComponent, NotesComponent, ContactCardComponent, SettingsComponent, PrivacyPolicyComponent, ForgotPasswordComponent],
+  declarations: [AppComponent, FormsComponent, NotesComponent, ContactCardComponent, SettingsComponent, PrivacyPolicyComponent, ForgotPasswordComponent, NewsComponent],
   imports: [
     BrowserModule,
     IonicModule.forRoot(),
